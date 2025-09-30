@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+</head>
+<body>
+    <h2>Formulario de Inscrição</h2>
+    <form action="#" method="post">
+        <div>
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="" placeholder="Digite seu nome" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="" placeholder="seuemail@exemplo.com">
+        </div>
+        <div>
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="" placeholder="(11)99999-9999">
+            <label for="curso">Curso desejado</label>
+            <select name="" id="curso">
+                <option value="" selected disabled>Selecione</option>
+                <option value="PW">Programação Web</option>
+                <option value="ED">Estrutura de Dados</option>
+                <option value="ES">Engenharia de Software</option>
+            </select>
+        </div>
+        <div>
+            <h3>Preferências</h3>
+            <input type="radio" name="modalidade" value="presencial"> Presencial
+            <label>
+                <input type="radio" name="modalidade" value="hibtrido"> Híbrido
+            </label>
+            <label>
+                <input type="radio" name="modalidade" value="remoto"> Remoto
+            </label>
+
+            <label>
+                <input type="checkbox" name="recursos" value="acessibilidade"> Preciso de acessibilidade
+            </label>
+            <label>
+                <input type="checkbox" name="material" value="material"> Material Impresso
+            </label>
+        </div>
+        
+        <div>
+            <label for="data">Data início desejada</label>
+            <input type="date" name="data" id="">
+
+            <label for="nivel">Nível de Experiência</label>
+            <input type="range" name="nivel" min="0" max="10" value="5">
+            
+            <label for="arquivo">Foto do Estudante</label>
+            <input type="file" name="arquivo" accept="image/*">
+        </div>
+        <div>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" rows="5"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Enviar inscrição</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+</body>
+</html>
